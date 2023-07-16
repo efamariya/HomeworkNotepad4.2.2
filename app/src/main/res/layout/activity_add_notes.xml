@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/holst"
+    tools:context=".view.AddNotesActivity">
+
+    <EditText
+        android:id="@+id/title_edit"
+        android:layout_width="331dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="124dp"
+        android:background="@drawable/shape_recyclerview"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Введите название заметки"
+        android:inputType="textPersonName"
+        android:textColor="#080909"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/description_edit"
+        android:layout_width="326dp"
+        android:layout_height="287dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/shape_recyclerview"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:hint="Введие описание"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_edit" />
+
+    <Button
+        android:id="@+id/add_note"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_weight="1"
+        android:backgroundTint="#FF3E5F63"
+        android:text="НОВАЯ ЗАМЕТКА"
+        android:textColor="#FBF7F7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/description_edit" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
